@@ -85,36 +85,35 @@ export const CATEGORY_METADATA: Record<string, { title: string, description: str
 
 export const PRODUCTS: Product[] = [
   {
-    id: "spicy-murukku",
-    name: "Spicy Garlic Murukku",
-    price: "₹ 420/kg",
-    description: "Extra crunchy hand-twisted murukku infused with freshly pounded garlic and dried red chilies. A spicy delight from Erode.",
-    image: "https://images.unsplash.com/photo-1605197509751-fe230ddd35f6?auto=format&fit=crop&q=80&w=800",
-    tag: "Traditional",
-    category: "savouries",
-    makingOf: [
-      "Rice flour is roasted lightly and mixed with roasted black gram (urad dal) flour.",
-      "Fresh garlic cloves are pounded with dried chilies to create a vibrant seasoning paste.",
-      "The dough is kneaded with butter for a melt-in-mouth texture while remaining crispy.",
-      "Hand-pressed using traditional brass molds directly into boiling cold-pressed oil."
-    ],
-    flavors: ["Garlic Punch", "Roasted Urad Dal", "Chili Heat", "Pure Butter"]
-  },
-  {
-    id: "traditional-thattai",
-    name: "Traditional Thattai",
+    id: "butter-murukku",
+    name: "Pure Butter Murukku",
     price: "₹ 440/kg",
-    description: "Hand-pressed crispy rice crackers with a delightful crunch, seasoned with soaked chana dal, curry leaves, and a hint of hing.",
-    image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&q=80&w=800",
+    description: "Incredibly light and melt-in-the-mouth crunchy rings made with premium butter and rice flour.",
+    image: "https://images.unsplash.com/photo-1626132647523-26f6ce3a034d?auto=format&fit=crop&q=80&w=800",
     tag: "Staff Pick",
     category: "savouries",
     makingOf: [
-      "Rice is soaked, dried, and ground into a fine powder, then lightly roasted.",
-      "Soaked chana dal and split urad dal are added for a varied crunch in every bite.",
-      "The dough is hand-divided and flattened into thin disks using a traditional cloth method.",
-      "Slow-fried to a deep golden color to ensure they remain crispy for weeks."
+      "Fine rice flour is blended with a generous amount of pure white butter.",
+      "A touch of roasted gram flour is added for depth of flavor.",
+      "The dough is seasoned with cumin and sesame seeds.",
+      "Expertly pressed and fried until perfectly golden and brittle."
     ],
-    flavors: ["Rice Crunch", "Chana Dal Bite", "Aromatic Hing", "Curry Leaf Freshness"]
+    flavors: ["White Butter", "Toasted Cumin", "Nutty Rice", "Sesame Spark"]
+  },
+  {
+    id: "masala-peanuts",
+    name: "Spicy Masala Peanuts",
+    price: "₹ 360/kg",
+    description: "Bold and crunchy roasted peanuts coated in a fiery blend of South Indian spices and curry leaves.",
+    image: "https://images.unsplash.com/photo-1546548970-71785318a17b?auto=format&fit=crop&q=80&w=800",
+    category: "savouries",
+    makingOf: [
+      "Premium whole peanuts are dry-roasted until they release their natural oils.",
+      "A spice blend of red chili, turmeric, and black pepper is prepared.",
+      "Fresh curry leaves are flash-fried to add a distinct aroma.",
+      "The peanuts are tossed in the spice mix while warm for perfect coating."
+    ],
+    flavors: ["Roasted Peanut", "Curry Leaf", "Red Chili", "Black Pepper"]
   },
   {
     id: "ribbon-pakoda",
@@ -164,19 +163,19 @@ export const PRODUCTS: Product[] = [
     flavors: ["Buttery Cashew", "Crispy Besan", "Curry Leaf Aroma", "Fennel Spike"]
   },
   {
-    id: "aval-mixture",
-    name: "Aval (Poha) Mixture",
-    price: "₹ 380/kg",
-    description: "A light and airy snack made from beaten rice, roasted peanuts, and fried curry leaves. The perfect guilt-free munch.",
-    image: "https://images.unsplash.com/photo-1589113103503-49655d89bc9f?auto=format&fit=crop&q=80&w=800",
+    id: "cornflakes-mixture",
+    name: "Golden Cornflakes Mixture",
+    price: "₹ 410/kg",
+    description: "A modern classic. Crispy cornflakes tossed with roasted cashews, dhal, and a sweet-spicy seasoning.",
+    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17051?auto=format&fit=crop&q=80&w=800",
     category: "savouries",
     makingOf: [
-      "Thin variety beaten rice (Aval) is flash-fried to achieve an ultra-light texture.",
-      "Roasted peanuts, roasted gram, and thin slices of dried coconut (Kopparai) are added.",
-      "The mixture is tossed with fresh curry leaves and a mild spice blend of turmeric and salt.",
-      "Final seasoning is done while warm to ensure even distribution of flavors."
+      "High-quality cornflakes are flash-fried for ultimate crispiness.",
+      "Roasted cashews and split gram dal are added for crunch and protein.",
+      "A unique blend of powdered sugar and chili is used for the 'Khatta-Meetha' profile.",
+      "Mixed thoroughly to ensure every flake is seasoned to perfection."
     ],
-    flavors: ["Toasted Peanut", "Crispy Poha", "Roasted Gram", "Turmeric Bloom"]
+    flavors: ["Khatta Meetha", "Fried Corn", "Golden Cashew", "Mild Chili"]
   },
   {
     id: "kesar-peda",
