@@ -2,6 +2,7 @@ import { Search, Menu, X, Home, Info, Candy, Cookie, Gift, Mail, ChevronRight, P
 import { motion, AnimatePresence } from 'motion/react';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import BranchSelector from './BranchSelector';
 
 const NAV_ITEMS = [
   { name: 'Home', path: '/', icon: Home },
@@ -42,7 +43,6 @@ const NAV_ITEMS = [
     ]
   },
   { name: 'Sweet Palace', path: '/sweet-palace', icon: Cookie },
-  { name: 'Packaging', path: '/packaging', icon: Gift },
   { name: 'Contact Us', path: '/contact', icon: Mail },
 ];
 
@@ -51,6 +51,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
+  const [showBranchSelector, setShowBranchSelector] = useState(false);
 
   // Close menu on route change
   useEffect(() => {
@@ -167,13 +168,13 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center gap-2 md:gap-4">
-            <a 
-              href="tel:+919876543210"
+            <button 
+              onClick={() => setShowBranchSelector(true)}
               className="hidden sm:flex items-center gap-2 bg-primary-red text-white px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase hover:bg-primary-red/90 transition-all shadow-lg shadow-primary-red/20"
             >
               <Phone className="w-3 h-3" />
               <span>Call Us</span>
-            </a>
+            </button>
             <button className="text-primary-red p-2 rounded-full hover:bg-gold/10 transition-colors">
               <Search className="w-5 h-5" />
             </button>
@@ -296,17 +297,20 @@ export default function Navbar() {
               <div className="p-6 border-t border-border-amber bg-stone-50 space-y-4">
                 <p className="text-[10px] text-stone-400 tracking-widest uppercase font-bold px-2">Quick Contact</p>
                 <div className="grid grid-cols-2 gap-3">
-                  <a 
-                    href="tel:+919876543210" 
+                  <button 
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      setShowBranchSelector(true);
+                    }}
                     className="flex flex-col items-center justify-center p-3 rounded-xl bg-white border border-stone-200 hover:border-gold transition-colors group"
                   >
                     <div className="p-2 rounded-full bg-gold/10 text-gold mb-2 group-hover:bg-gold group-hover:text-white transition-colors">
                       <Phone className="w-4 h-4" />
                     </div>
                     <span className="text-[10px] font-bold text-stone-600 uppercase">Call</span>
-                  </a>
+                  </button>
                   <a 
-                    href="https://wa.me/919876543210" 
+                    href="https://wa.me/08098092009" 
                     target="_blank"
                     rel="noreferrer"
                     className="flex flex-col items-center justify-center p-3 rounded-xl bg-white border border-stone-200 hover:border-gold transition-colors group"
@@ -333,6 +337,7 @@ export default function Navbar() {
           </>
         )}
       </AnimatePresence>
+      <BranchSelector isOpen={showBranchSelector} onClose={() => setShowBranchSelector(false)} />
     </>
   );
 }

@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import BranchSelector from './BranchSelector';
 
 export default function Footer() {
+  const [showBranchSelector, setShowBranchSelector] = useState(false);
+
   return (
-    <footer className="w-full border-t border-border-amber bg-stone-50 py-16 px-6 md:px-12 mt-20">
+    <footer className="w-full border-t border-border-amber bg-stone-50 py-16 px-6 md:px-12 mt-20 relative">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
         <div className="flex flex-col gap-4">
           <span className="text-xl font-serif font-bold text-primary-red">SRM Sweets & Cakes</span>
@@ -26,18 +30,24 @@ export default function Footer() {
         <div className="flex flex-col gap-4">
           <h3 className="font-serif font-semibold text-lg text-primary-red">Connect</h3>
           <div className="flex gap-4">
-            <button className="text-stone-600 hover:text-primary-red transition-colors">
+            <button className="text-stone-600 hover:text-primary-red transition-colors" title="Email Us">
               <Mail className="w-5 h-5" />
             </button>
-            <button className="text-stone-600 hover:text-primary-red transition-colors">
+            <button 
+              onClick={() => setShowBranchSelector(true)}
+              className="text-stone-600 hover:text-primary-red transition-colors" 
+              title="Call Us"
+            >
               <Phone className="w-5 h-5" />
             </button>
-            <button className="text-stone-600 hover:text-primary-red transition-colors">
+            <button className="text-stone-600 hover:text-primary-red transition-colors" title="Find Us">
               <MapPin className="w-5 h-5" />
             </button>
           </div>
         </div>
       </div>
+
+      <BranchSelector isOpen={showBranchSelector} onClose={() => setShowBranchSelector(false)} />
     </footer>
   );
 }

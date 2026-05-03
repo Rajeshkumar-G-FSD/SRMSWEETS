@@ -172,7 +172,6 @@ export default function App() {
         <Route path="/category/:slug" element={<CategoryPage />} />
         <Route path="/special/:slug" element={<CategoryPage />} />
         <Route path="/sweet-palace" element={<PagePlaceholder title="Sweet Palace" />} />
-        <Route path="/packaging" element={<PagePlaceholder title="Premium Packaging" />} />
         <Route path="/product/:id" element={<ProductDetailPage />} />
       </Routes>
     </BrowserRouter>
