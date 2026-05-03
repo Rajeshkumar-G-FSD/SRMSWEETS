@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Serif:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif", ui-serif, Georgia, serif;
+
+  --color-primary-red: #610000;
+  --color-primary-red-hover: #4a0000;
+  --color-gold: #735c00;
+  --color-bg-cream: #fefccf;
+  --color-surface-cream: #f8f6c9;
+  --color-border-amber: rgba(184, 134, 11, 0.2);
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(115, 92, 0, 0.2);
+  }
+
+  .ambient-shadow {
+    box-shadow: 0 10px 30px -10px rgba(97, 0, 0, 0.1);
+  }
+}
