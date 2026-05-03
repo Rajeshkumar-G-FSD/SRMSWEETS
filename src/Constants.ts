@@ -85,22 +85,6 @@ export const CATEGORY_METADATA: Record<string, { title: string, description: str
 
 export const PRODUCTS: Product[] = [
   {
-    id: "butter-murukku",
-    name: "Pure Butter Murukku",
-    price: "₹ 440/kg",
-    description: "Incredibly light and melt-in-the-mouth crunchy rings made with premium butter and rice flour.",
-    image: "https://images.unsplash.com/photo-1626132647523-26f6ce3a034d?auto=format&fit=crop&q=80&w=800",
-    tag: "Staff Pick",
-    category: "savouries",
-    makingOf: [
-      "Fine rice flour is blended with a generous amount of pure white butter.",
-      "A touch of roasted gram flour is added for depth of flavor.",
-      "The dough is seasoned with cumin and sesame seeds.",
-      "Expertly pressed and fried until perfectly golden and brittle."
-    ],
-    flavors: ["White Butter", "Toasted Cumin", "Nutty Rice", "Sesame Spark"]
-  },
-  {
     id: "masala-peanuts",
     name: "Spicy Masala Peanuts",
     price: "₹ 360/kg",
@@ -161,21 +145,6 @@ export const PRODUCTS: Product[] = [
       "Fritters are dropped one-by-one into hot oil to ensure they don't stick and remain individual crunchy treats."
     ],
     flavors: ["Buttery Cashew", "Crispy Besan", "Curry Leaf Aroma", "Fennel Spike"]
-  },
-  {
-    id: "cornflakes-mixture",
-    name: "Golden Cornflakes Mixture",
-    price: "₹ 410/kg",
-    description: "A modern classic. Crispy cornflakes tossed with roasted cashews, dhal, and a sweet-spicy seasoning.",
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17051?auto=format&fit=crop&q=80&w=800",
-    category: "savouries",
-    makingOf: [
-      "High-quality cornflakes are flash-fried for ultimate crispiness.",
-      "Roasted cashews and split gram dal are added for crunch and protein.",
-      "A unique blend of powdered sugar and chili is used for the 'Khatta-Meetha' profile.",
-      "Mixed thoroughly to ensure every flake is seasoned to perfection."
-    ],
-    flavors: ["Khatta Meetha", "Fried Corn", "Golden Cashew", "Mild Chili"]
   },
   {
     id: "kesar-peda",
