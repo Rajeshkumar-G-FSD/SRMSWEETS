@@ -85,6 +85,53 @@ export const CATEGORY_METADATA: Record<string, { title: string, description: str
 
 export const PRODUCTS: Product[] = [
   {
+    id: "spicy-murukku",
+    name: "Spicy Garlic Murukku",
+    price: "₹ 420/kg",
+    description: "Extra crunchy hand-twisted murukku infused with freshly pounded garlic and dried red chilies. A spicy delight from Erode.",
+    image: "https://images.unsplash.com/photo-1605197509751-fe230ddd35f6?auto=format&fit=crop&q=80&w=800",
+    tag: "Traditional",
+    category: "savouries",
+    makingOf: [
+      "Rice flour is roasted lightly and mixed with roasted black gram (urad dal) flour.",
+      "Fresh garlic cloves are pounded with dried chilies to create a vibrant seasoning paste.",
+      "The dough is kneaded with butter for a melt-in-mouth texture while remaining crispy.",
+      "Hand-pressed using traditional brass molds directly into boiling cold-pressed oil."
+    ],
+    flavors: ["Garlic Punch", "Roasted Urad Dal", "Chili Heat", "Pure Butter"]
+  },
+  {
+    id: "traditional-thattai",
+    name: "Traditional Thattai",
+    price: "₹ 440/kg",
+    description: "Hand-pressed crispy rice crackers with a delightful crunch, seasoned with soaked chana dal, curry leaves, and a hint of hing.",
+    image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&q=80&w=800",
+    tag: "Staff Pick",
+    category: "savouries",
+    makingOf: [
+      "Rice is soaked, dried, and ground into a fine powder, then lightly roasted.",
+      "Soaked chana dal and split urad dal are added for a varied crunch in every bite.",
+      "The dough is hand-divided and flattened into thin disks using a traditional cloth method.",
+      "Slow-fried to a deep golden color to ensure they remain crispy for weeks."
+    ],
+    flavors: ["Rice Crunch", "Chana Dal Bite", "Aromatic Hing", "Curry Leaf Freshness"]
+  },
+  {
+    id: "ribbon-pakoda",
+    name: "Golden Ribbon Pakoda",
+    price: "₹ 390/kg",
+    description: "Paper-thin, crispy gram flour ribbons seasoned with pepper and cumin. The lightest snack for your tea-time cravings.",
+    image: "https://images.unsplash.com/photo-1505253149613-112d21d9f6a9?auto=format&fit=crop&q=80&w=800",
+    category: "savouries",
+    makingOf: [
+      "A delicate blend of gram flour and rice flour is sifted three times for smoothness.",
+      "Powdered cumin and black pepper are added for a subtle, sophisticated heat.",
+      "The batter is kept at a precise consistency to ensure the ribbons are flat and uniform.",
+      "Quick-fried for just 45 seconds to keep the golden color and airy texture."
+    ],
+    flavors: ["Besan Nuttyness", "Cumin Earthy", "Pepper Spark", "Light Crunch"]
+  },
+  {
     id: "bhakarwadi",
     name: "Crispy Bhakarwadi",
     price: "₹ 400/kg",
@@ -177,15 +224,5 @@ export const PRODUCTS: Product[] = [
       "The fudge is rolled out thin and hand-adorned with authentic edible silver leaf (Vark)."
     ],
     flavors: ["Grade-A Cashews", "Sweet Cream", "Silver Mineral", "Vanilla Bean"]
-  },
-  {
-    id: "spicy-murukku",
-    name: "Spicy Murukku",
-    price: "₹ 350/kg",
-    description: "Crunchy traditional snack made from rice flour and urad dal, spiked with red chili and sesame.",
-    image: "https://images.unsplash.com/photo-1605332560868-809ba249f0ec?auto=format&fit=crop&q=80&w=800",
-    category: "savouries",
-    makingOf: ["Stone-ground rice flour", "Hand-pressed through 'murukku-manai'", "Double-fried in peanut oil"],
-    flavors: ["Sesame", "Ancho Chili", "Asafoetida"]
   }
 ];

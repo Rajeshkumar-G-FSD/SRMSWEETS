@@ -13,6 +13,7 @@ import ProductDetailPage from './components/ProductDetailPage';
 import Locations from './components/Locations';
 import HeroSlider from './components/HeroSlider';
 import AttractiveSlogans from './components/AttractiveSlogans';
+import AboutUs from './components/AboutUs';
 import { PRODUCTS, CATEGORY_METADATA } from './Constants';
 
 function CategoryPage() {
@@ -166,7 +167,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<PagePlaceholder title="Our Story" />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<PagePlaceholder title="Get in Touch" />} />
         <Route path="/category/:slug" element={<CategoryPage />} />
         <Route path="/special/:slug" element={<CategoryPage />} />
